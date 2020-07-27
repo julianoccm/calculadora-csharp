@@ -65,6 +65,7 @@
             this.bttnClear.ForeColor = System.Drawing.Color.Transparent;
             this.bttnClear.Name = "bttnClear";
             this.bttnClear.UseVisualStyleBackColor = false;
+            this.bttnClear.Click += new System.EventHandler(this.bttnClear_Click);
             // 
             // bttnIgual
             // 
@@ -76,6 +77,7 @@
             this.bttnIgual.ForeColor = System.Drawing.Color.Transparent;
             this.bttnIgual.Name = "bttnIgual";
             this.bttnIgual.UseVisualStyleBackColor = false;
+            this.bttnIgual.Click += new System.EventHandler(this.bttnIgual_Click);
             // 
             // bttnBack
             // 
@@ -87,6 +89,7 @@
             this.bttnBack.ForeColor = System.Drawing.Color.Transparent;
             this.bttnBack.Name = "bttnBack";
             this.bttnBack.UseVisualStyleBackColor = false;
+            this.bttnBack.Click += new System.EventHandler(this.bttnBack_Click);
             // 
             // bttnMenos
             // 
@@ -98,6 +101,7 @@
             this.bttnMenos.ForeColor = System.Drawing.Color.Transparent;
             this.bttnMenos.Name = "bttnMenos";
             this.bttnMenos.UseVisualStyleBackColor = false;
+            this.bttnMenos.Click += new System.EventHandler(this.bttnMenos_Click);
             // 
             // bttnMais
             // 
@@ -109,6 +113,7 @@
             this.bttnMais.ForeColor = System.Drawing.Color.Transparent;
             this.bttnMais.Name = "bttnMais";
             this.bttnMais.UseVisualStyleBackColor = false;
+            this.bttnMais.Click += new System.EventHandler(this.bttnMais_Click);
             // 
             // pictureBox2
             // 
@@ -134,6 +139,7 @@
             this.bttnDivisao.ForeColor = System.Drawing.Color.Transparent;
             this.bttnDivisao.Name = "bttnDivisao";
             this.bttnDivisao.UseVisualStyleBackColor = false;
+            this.bttnDivisao.Click += new System.EventHandler(this.bttnDivisao_Click);
             // 
             // bttnMultiplicacao
             // 
@@ -145,6 +151,7 @@
             this.bttnMultiplicacao.ForeColor = System.Drawing.Color.Transparent;
             this.bttnMultiplicacao.Name = "bttnMultiplicacao";
             this.bttnMultiplicacao.UseVisualStyleBackColor = false;
+            this.bttnMultiplicacao.Click += new System.EventHandler(this.bttnMultiplicacao_Click);
             // 
             // bttnN0
             // 
@@ -156,6 +163,7 @@
             this.bttnN0.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN0.Name = "bttnN0";
             this.bttnN0.UseVisualStyleBackColor = false;
+            this.bttnN0.Click += new System.EventHandler(this.bttnN0_Click);
             // 
             // bttnN1
             // 
@@ -167,6 +175,7 @@
             this.bttnN1.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN1.Name = "bttnN1";
             this.bttnN1.UseVisualStyleBackColor = false;
+            this.bttnN1.Click += new System.EventHandler(this.bttnN1_Click);
             // 
             // bttnN2
             // 
@@ -178,6 +187,7 @@
             this.bttnN2.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN2.Name = "bttnN2";
             this.bttnN2.UseVisualStyleBackColor = false;
+            this.bttnN2.Click += new System.EventHandler(this.bttnN2_Click);
             // 
             // bttnN3
             // 
@@ -189,6 +199,7 @@
             this.bttnN3.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN3.Name = "bttnN3";
             this.bttnN3.UseVisualStyleBackColor = false;
+            this.bttnN3.Click += new System.EventHandler(this.bttnN3_Click);
             // 
             // bttnN4
             // 
@@ -200,6 +211,7 @@
             this.bttnN4.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN4.Name = "bttnN4";
             this.bttnN4.UseVisualStyleBackColor = false;
+            this.bttnN4.Click += new System.EventHandler(this.bttnN4_Click);
             // 
             // bttnN5
             // 
@@ -211,6 +223,7 @@
             this.bttnN5.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN5.Name = "bttnN5";
             this.bttnN5.UseVisualStyleBackColor = false;
+            this.bttnN5.Click += new System.EventHandler(this.bttnN5_Click);
             // 
             // bttnN6
             // 
@@ -222,6 +235,7 @@
             this.bttnN6.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN6.Name = "bttnN6";
             this.bttnN6.UseVisualStyleBackColor = false;
+            this.bttnN6.Click += new System.EventHandler(this.bttnN6_Click);
             // 
             // bttnN7
             // 
@@ -233,6 +247,7 @@
             this.bttnN7.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN7.Name = "bttnN7";
             this.bttnN7.UseVisualStyleBackColor = false;
+            this.bttnN7.Click += new System.EventHandler(this.bttnN7_Click);
             // 
             // bttnN8
             // 
@@ -244,6 +259,7 @@
             this.bttnN8.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN8.Name = "bttnN8";
             this.bttnN8.UseVisualStyleBackColor = false;
+            this.bttnN8.Click += new System.EventHandler(this.bttnN8_Click);
             // 
             // bttnN9
             // 
@@ -255,6 +271,7 @@
             this.bttnN9.ForeColor = System.Drawing.Color.Transparent;
             this.bttnN9.Name = "bttnN9";
             this.bttnN9.UseVisualStyleBackColor = false;
+            this.bttnN9.Click += new System.EventHandler(this.bttnN9_Click);
             // 
             // bttnPonto
             // 
