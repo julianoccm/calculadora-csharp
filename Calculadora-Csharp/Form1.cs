@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculadora_Csharp
 {
-    public partial class Form1 : Form
+    public partial class Background : Form
     {
-        public Form1()
+        public Background()
         {
             InitializeComponent();
         }
