@@ -163,6 +163,16 @@ namespace Calculadora_Csharp.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap @__141 {
+            get {
+                object obj = ResourceManager.GetObject("+-141", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap @__2 {
             get {
                 object obj = ResourceManager.GetObject("+-2", resourceCulture);
@@ -266,6 +276,16 @@ namespace Calculadora_Csharp.Properties {
         internal static System.Drawing.Bitmap down_btn {
             get {
                 object obj = ResourceManager.GetObject("down btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap equal {
+            get {
+                object obj = ResourceManager.GetObject("equal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
