@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Operadores;
+using System.Globalization;
 
 namespace Calculadora_Csharp
 {
@@ -76,7 +77,7 @@ namespace Calculadora_Csharp
             switch (operador) 
             {
                 case "+":
-                    result.Text = soma.RealizarSoma(primeiro, segundo).ToString();
+                    result.Text = soma.RealizarSoma(primeiro, segundo).ToString("F2");
                     break;
                 case "-":
                     result.Text = sub.RealizaSub(primeiro, segundo).ToString();
@@ -131,6 +132,11 @@ namespace Calculadora_Csharp
             primeiro = 0;
             segundo = 0;
             result.Clear();
+        }
+
+        private void bttnPonto_Click(object sender, EventArgs e)
+        {
+            result.Text = result.Text + ",";
         }
     }
 }

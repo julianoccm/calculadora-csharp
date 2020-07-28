@@ -284,6 +284,7 @@
             this.bttnPonto.ForeColor = System.Drawing.Color.Transparent;
             this.bttnPonto.Name = "bttnPonto";
             this.bttnPonto.UseVisualStyleBackColor = false;
+            this.bttnPonto.Click += new System.EventHandler(this.bttnPonto_Click);
             // 
             // pictureBox3
             // 
@@ -296,6 +297,7 @@
             // 
             this.result.BackColor = System.Drawing.Color.Gray;
             this.result.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.result.Cursor = System.Windows.Forms.Cursors.Arrow;
             resources.ApplyResources(this.result, "result");
             this.result.ForeColor = System.Drawing.SystemColors.Window;
             this.result.Name = "result";

@@ -736,13 +736,16 @@
     <value>0, 52</value>
   </data>
   <data name="result.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+    <value>No</value>
   </data>
   <data name="result.Size" type="System.Drawing.Size, System.Drawing">
     <value>255, 81</value>
   </data>
   <data name="result.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="result.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <data name="&gt;&gt;result.Name" xml:space="preserve">
     <value>result</value>
