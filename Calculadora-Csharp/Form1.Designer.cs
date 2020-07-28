@@ -50,6 +50,7 @@
             this.bttnN9 = new System.Windows.Forms.Button();
             this.bttnPonto = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.result = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -117,14 +118,14 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Calculadora_Csharp.Properties.Resources.down_btn;
+            this.pictureBox2.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Calculadora_Csharp.Properties.Resources.Rectangle;
+            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -291,11 +292,21 @@
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
+            // result
+            // 
+            this.result.BackColor = System.Drawing.Color.Gray;
+            this.result.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.result, "result");
+            this.result.ForeColor = System.Drawing.SystemColors.Window;
+            this.result.Name = "result";
+            this.result.ReadOnly = true;
+            // 
             // Background
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.result);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.bttnPonto);
             this.Controls.Add(this.bttnN9);
@@ -323,6 +334,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -349,6 +361,7 @@
         private System.Windows.Forms.Button bttnN9;
         private System.Windows.Forms.Button bttnPonto;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox result;
     }
 }
 
