@@ -1,7 +1,9 @@
 ﻿using System;
-using System.Windows.Forms;
 using Operadores;
+using System.Windows.Forms;
 using System.Globalization;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Calculadora_Csharp
 {
@@ -10,6 +12,9 @@ namespace Calculadora_Csharp
         public double primeiro { get; set; }
         public double segundo { get; set; }
         public string operador { get; set; }
+        public List<string> hist { get; set; } = new List<string>();
+
+        Form2 historico = new Form2();
 
         public Background()
         {
@@ -107,18 +112,23 @@ namespace Calculadora_Csharp
             switch (operador) 
             {
                 case "+":
-                    result.Text = soma.RealizarSoma(primeiro, segundo).ToString("F2");
+                    result.Text = soma.RealizarSoma(primeiro, segundo).ToString("F1", CultureInfo.CurrentCulture);
                     break;
                 case "-":
-                    result.Text = sub.RealizaSub(primeiro, segundo).ToString("F2");
+                    result.Text = sub.RealizaSub(primeiro, segundo).ToString("F1", CultureInfo.CurrentCulture);
                     break;
                 case "X":
-                    result.Text = mul.RealizaMulti(primeiro, segundo).ToString("F2");
+                    result.Text = mul.RealizaMulti(primeiro, segundo).ToString("F2", CultureInfo.CurrentCulture);
                     break;
                 case "/":
-                    result.Text = div.RealizaDiv(primeiro, segundo).ToString("F2");
+                    result.Text = div.RealizaDiv(primeiro, segundo).ToString("F2", CultureInfo.CurrentCulture);
                     break;
             }
+            StringBuilder sb = new StringBuilder();
+            
+            sb.AppendLine($"{primeiro}{operador}{segundo} = {result.Text}");
+            historico.historico.Text += sb;
+            
         }
 
         private void bttnMais_Click(object sender, EventArgs e)
@@ -167,6 +177,14 @@ namespace Calculadora_Csharp
         private void bttnPonto_Click(object sender, EventArgs e)
         {
             result.Text = result.Text + ",";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        { 
+            historico.Show();
+            primeiro = 0;
+            segundo = 0;
+            operador = null;
         }
     }
 }
