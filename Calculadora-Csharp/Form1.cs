@@ -23,52 +23,82 @@ namespace Calculadora_Csharp
 
         private void bttnN0_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "0";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "0";
+            }
         }
 
         private void bttnN1_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "1";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "1";
+            }
         }
 
         private void bttnN2_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "2";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "2";
+            }
         }
 
         private void bttnN3_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "3";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "3";
+            }
         }
 
         private void bttnN4_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "4";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "4";
+            }
         }
 
         private void bttnN5_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "5";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "5";
+            }
         }
 
         private void bttnN6_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "6";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "6";
+            }
         }
 
         private void bttnN7_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "7";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "7";
+            }
         }
 
         private void bttnN8_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "8";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "8";
+            }
         }
 
         private void bttnN9_Click(object sender, EventArgs e)
         {
-            result.Text = result.Text + "9";
+            if (result.Text.Length <= 7)
+            {
+                result.Text = result.Text + "9";
+            }
         }
 
         private void bttnIgual_Click(object sender, EventArgs e)
@@ -80,13 +110,13 @@ namespace Calculadora_Csharp
                     result.Text = soma.RealizarSoma(primeiro, segundo).ToString("F2");
                     break;
                 case "-":
-                    result.Text = sub.RealizaSub(primeiro, segundo).ToString();
+                    result.Text = sub.RealizaSub(primeiro, segundo).ToString("F2");
                     break;
                 case "X":
-                    result.Text = mul.RealizaMulti(primeiro, segundo).ToString();
+                    result.Text = mul.RealizaMulti(primeiro, segundo).ToString("F2");
                     break;
                 case "/":
-                    result.Text = div.RealizaDiv(primeiro, segundo).ToString();
+                    result.Text = div.RealizaDiv(primeiro, segundo).ToString("F2");
                     break;
             }
         }

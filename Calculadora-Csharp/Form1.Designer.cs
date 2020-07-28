@@ -51,6 +51,7 @@
             this.bttnPonto = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.result = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -303,11 +304,22 @@
             this.result.Name = "result";
             this.result.ReadOnly = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Gray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            // 
             // Background
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.bttnPonto);
@@ -364,6 +376,7 @@
         private System.Windows.Forms.Button bttnPonto;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox result;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
