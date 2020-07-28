@@ -105,12 +105,14 @@ namespace Calculadora_Csharp
 
         private void bttnBack_Click(object sender, EventArgs e)
         {
-
+            string aux = result.Text;
+            aux = aux.Remove(aux.Length - 1);
+            result.Text = aux;
         }
 
         private void bttnClear_Click(object sender, EventArgs e)
         {
-
+            result.Text = "";
         }
     }
 }
