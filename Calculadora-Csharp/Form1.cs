@@ -128,6 +128,8 @@ namespace Calculadora_Csharp
 
         private void bttnClear_Click(object sender, EventArgs e)
         {
+            primeiro = 0;
+            segundo = 0;
             result.Clear();
         }
     }
