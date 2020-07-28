@@ -52,7 +52,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operadores\Divisao.cs" />
+    <Compile Include="Operadores\Multiplicacao.cs" />
     <Compile Include="Operadores\Soma.cs" />
+    <Compile Include="Operadores\Subtracao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.pt-BR.resx">

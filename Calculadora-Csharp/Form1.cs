@@ -76,12 +76,17 @@ namespace Calculadora_Csharp
 
         private void bttnIgual_Click(object sender, EventArgs e)
         {
-            double sum;
             segundo = double.Parse(result.Text);
             switch (operador) 
             {
                 case "+":
                     result.Text = soma.RealizarSoma(primeiro, segundo).ToString();
+                    break;
+                case "-":
+                    break;
+                case "X":
+                    break;
+                case "/":
                     break;
 
             }
