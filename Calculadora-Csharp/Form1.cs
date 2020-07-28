@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Operadores;
 
@@ -23,6 +16,9 @@ namespace Calculadora_Csharp
         }
 
         Soma soma = new Soma();
+        Divisao div = new Divisao();
+        Multiplicacao mul = new Multiplicacao();
+        Subtracao sub = new Subtracao();
 
         private void bttnN0_Click(object sender, EventArgs e)
         {
@@ -83,12 +79,14 @@ namespace Calculadora_Csharp
                     result.Text = soma.RealizarSoma(primeiro, segundo).ToString();
                     break;
                 case "-":
+                    result.Text = sub.RealizaSub(primeiro, segundo).ToString();
                     break;
                 case "X":
+                    result.Text = mul.RealizaMulti(primeiro, segundo).ToString();
                     break;
                 case "/":
+                    result.Text = div.RealizaDiv(primeiro, segundo).ToString();
                     break;
-
             }
         }
 
@@ -102,17 +100,23 @@ namespace Calculadora_Csharp
 
         private void bttnMenos_Click(object sender, EventArgs e)
         {
-
+            operador = "-";
+            primeiro = double.Parse(result.Text);
+            result.Clear();
         }
 
         private void bttnMultiplicacao_Click(object sender, EventArgs e)
         {
-
+            operador = "X";
+            primeiro = double.Parse(result.Text);
+            result.Clear();
         }
 
         private void bttnDivisao_Click(object sender, EventArgs e)
         {
-
+            operador = "/";
+            primeiro = double.Parse(result.Text);
+            result.Clear();
         }
 
         private void bttnBack_Click(object sender, EventArgs e)
