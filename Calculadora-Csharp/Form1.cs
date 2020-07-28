@@ -7,84 +7,91 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Operadores;
 
 namespace Calculadora_Csharp
 {
     public partial class Background : Form
     {
-        StringBuilder sb = new StringBuilder();
+        public double primeiro { get; set; }
+        public double segundo { get; set; }
+        public string operador { get; set; }
+
         public Background()
         {
             InitializeComponent();
         }
 
+        Soma soma = new Soma();
+
         private void bttnN0_Click(object sender, EventArgs e)
         {
-            sb.Append("0");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "0";
         }
 
         private void bttnN1_Click(object sender, EventArgs e)
         {
-            sb.Append("1");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "1";
         }
 
         private void bttnN2_Click(object sender, EventArgs e)
         {
-            sb.Append("2");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "2";
         }
 
         private void bttnN3_Click(object sender, EventArgs e)
         {
-            sb.Append("3");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "3";
         }
 
         private void bttnN4_Click(object sender, EventArgs e)
         {
-            sb.Append("4");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "4";
         }
 
         private void bttnN5_Click(object sender, EventArgs e)
         {
-            sb.Append("5");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "5";
         }
 
         private void bttnN6_Click(object sender, EventArgs e)
         {
-            sb.Append("6");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "6";
         }
 
         private void bttnN7_Click(object sender, EventArgs e)
         {
-            sb.Append("7");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "7";
         }
 
         private void bttnN8_Click(object sender, EventArgs e)
         {
-            sb.Append("8");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "8";
         }
 
         private void bttnN9_Click(object sender, EventArgs e)
         {
-            sb.Append("9");
-            result.Text = sb.ToString();
+            result.Text = result.Text + "9";
         }
 
         private void bttnIgual_Click(object sender, EventArgs e)
         {
+            double sum;
+            segundo = double.Parse(result.Text);
+            switch (operador) 
+            {
+                case "+":
+                    result.Text = soma.RealizarSoma(primeiro, segundo).ToString();
+                    break;
 
+            }
         }
 
         private void bttnMais_Click(object sender, EventArgs e)
         {
+            operador = "+";
+            primeiro = double.Parse(result.Text);
+            result.Clear();
 
         }
 
@@ -112,7 +119,7 @@ namespace Calculadora_Csharp
 
         private void bttnClear_Click(object sender, EventArgs e)
         {
-            result.Text = "";
+            result.Clear();
         }
     }
 }
