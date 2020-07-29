@@ -12,12 +12,11 @@ namespace Calculadora_Csharp
         public double primeiro { get; set; }
         public double segundo { get; set; }
         public string operador { get; set; }
-        public List<string> hist { get; set; } = new List<string>();
-
         Form2 historico = new Form2();
 
         public Background()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
         }
 
@@ -126,7 +125,7 @@ namespace Calculadora_Csharp
             }
             StringBuilder sb = new StringBuilder();
             
-            sb.AppendLine($"{primeiro}{operador}{segundo} = {result.Text}");
+            sb.AppendLine($"{primeiro} {operador} {segundo} = {result.Text}\n");
             historico.historico.Text += sb;
             
         }
@@ -180,8 +179,16 @@ namespace Calculadora_Csharp
         }
 
         private void button1_Click(object sender, EventArgs e)
-        { 
-            historico.Show();
+        {
+            bool open = true;
+            if (open)
+            {
+                int x = this.Location.X;
+                int y = this.Location.Y;
+                int X1 = x + 300;
+                historico.SetXY(X1, y);
+                historico.Show();
+            }
             primeiro = 0;
             segundo = 0;
             operador = null;
