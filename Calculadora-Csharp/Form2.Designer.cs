@@ -50,7 +50,7 @@
             this.historico.BackColor = System.Drawing.Color.DarkGray;
             this.historico.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.historico.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.historico.Font = new System.Drawing.Font("Bahnschrift Light", 25F, System.Drawing.FontStyle.Bold);
+            this.historico.Font = new System.Drawing.Font("Bahnschrift Light", 15F, System.Drawing.FontStyle.Bold);
             this.historico.ForeColor = System.Drawing.Color.Gray;
             this.historico.Location = new System.Drawing.Point(15, 49);
             this.historico.Multiline = true;
