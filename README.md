@@ -34,10 +34,6 @@
   O terceiro design foi o perfeito. Com uma palleta simples e um design moderno. Este era extamente o resultado que eu queria. Segue abaixo a foto:
   <p align="center">  
     <img width="260" height="465" src="https://user-images.githubusercontent.com/66191563/89084616-5a66cc00-d367-11ea-9bcf-bf0b2b20a94f.png">
-  </p>
-
-# Download do programa
-### Windows:
-- [Windows](https://drive.google.com/u/0/uc?id=14SLe5TcD-5vgJcgBZwor5XORhNry4r-i&export=download)
+  </p
 
 ### Contato: julianocolerecmoreira@gmail.com
