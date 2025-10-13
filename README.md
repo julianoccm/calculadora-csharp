@@ -1,17 +1,10 @@
-# Calculadora com C#
-<p align="center">
-  <img width="700" height="200" src="https://user-images.githubusercontent.com/66191563/89082019-3903e100-d363-11ea-8bf0-cd10b00ea4eb.png">
-</p>
+<p align="center"> <img src="https://github.com/user-attachments/assets/4da528b3-09c4-43ef-9b7b-8803f0597d90"  height="150px"/> </p>
+<h1 align="center">Calculadora com C#</h1>
 
-# Índice
- - [**Sobre o projeto**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#sobre-o-projeto)
- - [**Sobre o design**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#sobre-o-design)
-   - [**O primeiro design**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#o-primeiro-design)
-   - [**O segundo design**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#o-segundo-design)
-   - [**O design final**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#o-design-final)
- - [**Download do programa**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#download-do-programa)
-   - [**Windows**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#windows)
-   - [**Contato**](https://github.com/JulianoCCMoreira/Calculadora-Cshap/new/master?readme=1#contato-julianocolerecmoreiragmailcom)
+<p align="center">
+  <img src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?style=for-the-badge&logo=cshrp&logoColor=white" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=fff" />
+</p>
    
 # Sobre o projeto
  A ideia deste projeto é criar uma calculadora capaz de realizar cálculos simples, porém com um histórico de contas. Tudo isso com um design simples, porém moderno.
@@ -35,5 +28,3 @@
   <p align="center">  
     <img width="260" height="465" src="https://user-images.githubusercontent.com/66191563/89084616-5a66cc00-d367-11ea-9bcf-bf0b2b20a94f.png">
   </p>
-
-### Contato: julianocolerecmoreira@gmail.com
